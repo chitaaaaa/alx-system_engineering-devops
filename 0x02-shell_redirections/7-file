@@ -1,2 +1,2 @@
-[200~#!/bin/bash
+[200~#!/bin/bash
 echo "Holberton School" | cat > '\*\\'\''"Holberton School"\'\''\\*$\?\*\*\*\*\*:)'

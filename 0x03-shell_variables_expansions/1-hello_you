@@ -1,7 +1,2 @@
-<<<<<<< HEAD
 #!/bin/bash
 echo "hello $USER"
-=======
-#!/bin/bash
-echo "hello $USER"
->>>>>>> 8e4cb62c5268963d1addd89a5294e11094beef42

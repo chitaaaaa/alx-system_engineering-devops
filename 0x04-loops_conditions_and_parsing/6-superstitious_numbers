@@ -1,18 +1,30 @@
 #!/usr/bin/env bash
-# this script displays numbers from 1 to 20 and:
-# displays bad luck from China for the 4th loop iteration
-# displays bad luck from Japan for the 9th loop iteration
-# displays bad luck from Italy for the 17th loop iteration
+# displays numbers from 1 to 20.
 
-i=1
-while [ $i -le 20 ]; do
-    echo $i
+COUNTER=1
+while [ $COUNTER -lt 21 ]
+do
+    case $COUNTER in
 
-    case $i in
-	4) echo "bad luck from China";;
-	9) echo "bad luck from Japan";;
-	17) echo "bad luck from Italy";;
+        4)
+	    echo $COUNTER
+	    echo "bad luck from China"
+	    ;;
+	
+	9)
+	    echo $COUNTER
+	    echo "bad luck from Japan"
+	    ;;
+	
+	17)
+	    echo $COUNTER
+	    echo "bad luck from Italy"
+	    ;;
+
+	*)
+	    echo $COUNTER
+	    ;;
     esac
 
-    let i+=1
+    let COUNTER+=1
 done
